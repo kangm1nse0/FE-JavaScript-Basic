@@ -6,8 +6,16 @@ let likelion = [
 ];
 
 // 1번 문제 코드작성
-
-console.log(result1);
+for(let i=0;i<likelion.length;i++){
+  for(let j=0;j<likelion.length-1-i;j++){
+  if(likelion[j]>likelion[j+1]){
+    let temp = likelion[j];
+    likelion[j] = likelion[j+1];
+    likelion[j+1] = temp;
+  }
+  }
+}
+console.log(likelion);
 // 2번 문제
 let result2=[];
 result2=likelion.map(function(element){
