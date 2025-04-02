@@ -1,6 +1,14 @@
 //2. map활용 문제
 const numbers = [1, 2, 3, 4, 5];
+let answer=numbers.map(function(element){
+    if(element%2===0){
+        return "짝수";
+    }
+    else{
+        return "홀수";
+    }
 
-let answer;
+});
+
 
 console.log(answer);

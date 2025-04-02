@@ -7,13 +7,20 @@ let likelion = [
 
 // 1번 문제 코드작성
 
-// 2번 문제 코드작성
-let result2 = [];
-
+console.log(result1);
+// 2번 문제
+let result2=[];
+result2=likelion.map(function(element){
+  if(element.age>=24)
+    return element;
+});
 console.log(result2);
 
 // 3번 문제 코드작성
 let targetName = "전수빈";
 let result3 = null;
-
+result3=likelion.map(function(element){
+  if(element.name===targetName)
+    return element.part;
+});
 console.log(result3);
